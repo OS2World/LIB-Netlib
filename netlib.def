@@ -1,0 +1,80 @@
+LIBRARY netlib INITINSTANCE TERMINSTANCE
+DESCRIPTION	'$@#Bob Eager:1.1#@Network library'
+PROTMODE
+DATA MULTIPLE NONSHARED READWRITE LOADONCALL
+CODE LOADONCALL
+EXPORTS
+   _critlib_except           ; ****
+   _DosSelToFlat             ; **** ; 16 bit function
+   _DosFlatToSel             ; **** ; 16 bit function
+   _environ                  ; ****
+   _errno
+   stderr
+   stdin
+   stdout
+   _callback_opt_sys
+   _CRT_init                 ; ****
+   _CRT_term                 ; ****
+   _EXE_Exception            ; ****
+   _Exception                ; ****
+   _PrintErrMsg              ; ****
+   __threadid
+   _beginthread
+   _exception_dllinit        ; ****
+   _exception_procinit       ; ****
+   _matherr                  ; ****
+   _terminate                ; ****
+   _tzset
+   atoi
+   exit                      ; ****
+   fclose
+   fflush
+   fgets
+   fopen
+   fputc
+   fputs
+   free                      ; ****
+   getenv
+   isdigit
+   localtime
+   malloc                    ; ****
+   memccpy
+   memcpy
+   signal
+   strdup                    ; ****
+   strftime
+   stricmp
+   strlwr
+   strnicmp
+   strpbrk                   ; ****
+   strstr
+   strtok
+   time
+   vfprintf
+   vsprintf
+   _fpninit
+   _fpreset
+   _fprintfieee
+   _set_crt_msg_handle
+   _sprintfieee
+   _vfprintfieee
+   _vsprintfieee
+   fseek
+   remove
+   fwrite
+   _open
+   _fdopen
+   toupper
+   isalpha
+   qsort
+   strupr
+   realloc
+   isalnum
+   strcmpi
+   abort
+   _fileno
+   feof
+   _access
+   _ctype
+
+
